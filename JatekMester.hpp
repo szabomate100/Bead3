@@ -1,14 +1,17 @@
 #ifndef MAIN_CPP_JATEKMESTER_HPP
 #define MAIN_CPP_JATEKMESTER_HPP
 
-#include "checkbox.hpp"
 #include <vector>
 
 using namespace std;
 
 class JatekMester {
+private:
+    int currentPlayer = 1;
 public:
-    JatekMester(vector<vector<CheckBox>> playField);
+    JatekMester(int nx, int ny);
+    void changeCurrentPlayer();
+    int getCurrentPlayer();
 };
 
 

@@ -3,15 +3,13 @@
 
 CMakeFiles/untitled.dir/JatekMester.cpp.obj: ../JatekMester.cpp
 CMakeFiles/untitled.dir/JatekMester.cpp.obj: ../JatekMester.hpp
-CMakeFiles/untitled.dir/JatekMester.cpp.obj: ../checkbox.hpp
-CMakeFiles/untitled.dir/JatekMester.cpp.obj: ../graphics.hpp
-CMakeFiles/untitled.dir/JatekMester.cpp.obj: ../widgets.hpp
 
 CMakeFiles/untitled.dir/applikacio.cpp.obj: ../applikacio.cpp
 CMakeFiles/untitled.dir/applikacio.cpp.obj: ../applikacio.hpp
 CMakeFiles/untitled.dir/applikacio.cpp.obj: ../graphics.hpp
 CMakeFiles/untitled.dir/applikacio.cpp.obj: ../widgets.hpp
 
+CMakeFiles/untitled.dir/checkbox.cpp.obj: ../JatekMester.hpp
 CMakeFiles/untitled.dir/checkbox.cpp.obj: ../checkbox.cpp
 CMakeFiles/untitled.dir/checkbox.cpp.obj: ../checkbox.hpp
 CMakeFiles/untitled.dir/checkbox.cpp.obj: ../graphics.hpp

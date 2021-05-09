@@ -20,11 +20,11 @@ public:
 
     App() {
         vector<vector<CheckBox>> playField;
-        JatekMester *jatekMester = new JatekMester(playField);
+        JatekMester *jatekMester = new JatekMester(cellNumber, cellNumber);
         for (int iy = 0; iy < cellNumber; ++iy) {
             vector<CheckBox> playFieldRow;
             for (int ix = 0; ix < cellNumber; ++ix) {
-                CheckBox *refCheckBox = new CheckBox(ix * cellSize, iy * cellSize, cellSize, cellSize);
+                CheckBox *refCheckBox = new CheckBox(ix * cellSize, iy * cellSize, cellSize, cellSize, *jatekMester);
                 playFieldRow.push_back(*refCheckBox);
                 bele(refCheckBox);
             }

@@ -6,39 +6,23 @@
 
 #IncludeRegexTransform: 
 
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/JatekMester.cpp
+D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/JatekMester.hpp
+vector
+-
+
+D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/applikacio.hpp
+widgets.hpp
+D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/widgets.hpp
+vector
+-
+
+D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/checkbox.hpp
+graphics.hpp
+D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/graphics.hpp
+widgets.hpp
+D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/widgets.hpp
 JatekMester.hpp
 D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/JatekMester.hpp
-
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/JatekMester.hpp
-checkbox.hpp
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/checkbox.hpp
-vector
--
-
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/applikacio.cpp
-applikacio.hpp
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/applikacio.hpp
-widgets.hpp
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/widgets.hpp
-
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/applikacio.hpp
-widgets.hpp
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/widgets.hpp
-vector
--
-
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/checkbox.cpp
-checkbox.hpp
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/checkbox.hpp
-graphics.hpp
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/graphics.hpp
-
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/checkbox.hpp
-graphics.hpp
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/graphics.hpp
-widgets.hpp
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/widgets.hpp
 
 D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/graphics.hpp
 string
@@ -59,12 +43,6 @@ vector
 -
 iostream
 -
-
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/widgets.cpp
-widgets.hpp
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/widgets.hpp
-graphics.hpp
-D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/graphics.hpp
 
 D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/widgets.hpp
 graphics.hpp

@@ -2,7 +2,7 @@
 #include "graphics.hpp"
 using namespace genv;
 
-CheckBox::CheckBox(int x, int y, int sx, int sy)
+CheckBox::CheckBox(int x, int y, int sx, int sy, JatekMester jatekMester)
     : Widget(x,y,sx,sy)
 {
     checked=false;
@@ -35,7 +35,7 @@ void CheckBox::handle(event ev)
         checked = !checked;
     }
 }
-bool CheckBox::checked_e() 
+bool CheckBox::checked_e()
 {
     return checked;
 }
