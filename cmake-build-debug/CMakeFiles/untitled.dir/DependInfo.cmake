@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/JatekMester.cpp" "D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/cmake-build-debug/CMakeFiles/untitled.dir/JatekMester.cpp.obj"
   "D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/applikacio.cpp" "D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/cmake-build-debug/CMakeFiles/untitled.dir/applikacio.cpp.obj"
   "D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/checkbox.cpp" "D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/cmake-build-debug/CMakeFiles/untitled.dir/checkbox.cpp.obj"
   "D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/main.cpp" "D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/cmake-build-debug/CMakeFiles/untitled.dir/main.cpp.obj"

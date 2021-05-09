@@ -11,5 +11,5 @@ link_directories(lib)
 target_link_libraries( graphics SDL2 SDL2.dll SDL2main SDL2_ttf SDL2_ttf.dll)
 
 
-add_executable(untitled main.cpp applikacio.cpp checkbox.cpp widgets.cpp)
+add_executable(untitled main.cpp applikacio.cpp checkbox.cpp widgets.cpp JatekMester.cpp)
 target_link_libraries( untitled graphics)

@@ -1,6 +1,7 @@
 #include "graphics.hpp"
 #include "widgets.hpp"
 #include "checkbox.hpp"
+#include "JatekMester.hpp"
 #include "applikacio.hpp"
 #include <vector>
 #include <iostream>
@@ -19,6 +20,7 @@ public:
 
     App() {
         vector<vector<CheckBox>> playField;
+        JatekMester *jatekMester = new JatekMester(playField);
         for (int iy = 0; iy < cellNumber; ++iy) {
             vector<CheckBox> playFieldRow;
             for (int ix = 0; ix < cellNumber; ++ix) {

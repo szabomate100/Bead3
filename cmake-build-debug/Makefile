@@ -154,6 +154,33 @@ graphics/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graphics.dir\build.make CMakeFiles/graphics.dir/build
 .PHONY : graphics/fast
 
+JatekMester.obj: JatekMester.cpp.obj
+
+.PHONY : JatekMester.obj
+
+# target to build an object file
+JatekMester.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/JatekMester.cpp.obj
+.PHONY : JatekMester.cpp.obj
+
+JatekMester.i: JatekMester.cpp.i
+
+.PHONY : JatekMester.i
+
+# target to preprocess a source file
+JatekMester.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/JatekMester.cpp.i
+.PHONY : JatekMester.cpp.i
+
+JatekMester.s: JatekMester.cpp.s
+
+.PHONY : JatekMester.s
+
+# target to generate assembly for a file
+JatekMester.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/JatekMester.cpp.s
+.PHONY : JatekMester.cpp.s
+
 applikacio.obj: applikacio.cpp.obj
 
 .PHONY : applikacio.obj
@@ -299,6 +326,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... graphics
 	@echo ... untitled
+	@echo ... JatekMester.obj
+	@echo ... JatekMester.i
+	@echo ... JatekMester.s
 	@echo ... applikacio.obj
 	@echo ... applikacio.i
 	@echo ... applikacio.s

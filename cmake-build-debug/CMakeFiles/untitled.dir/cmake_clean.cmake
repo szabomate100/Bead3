@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/untitled.dir/JatekMester.cpp.obj"
   "CMakeFiles/untitled.dir/applikacio.cpp.obj"
   "CMakeFiles/untitled.dir/checkbox.cpp.obj"
   "CMakeFiles/untitled.dir/main.cpp.obj"

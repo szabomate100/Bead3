@@ -13,7 +13,3 @@ bool Widget::kival(int mouse_x, int mouse_y)
 }
 
 
-
-
-
-

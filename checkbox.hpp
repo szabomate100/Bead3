@@ -11,8 +11,8 @@ public:
     CheckBox(int x, int y, int sx, int sy);
     virtual void draw() ;
     virtual void handle(genv::event ev);
-    virtual bool checked_e() ;
+    virtual bool checked_e();
 };
 
 
-#endif 
+#endif

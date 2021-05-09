@@ -126,6 +126,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/JatekMester.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/JatekMester.hpp">
+			<Option target="untitled"/>
+		</Unit>
 		<Unit filename="D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/applikacio.cpp">
 			<Option target="untitled"/>
 		</Unit>
