@@ -10,7 +10,7 @@ using namespace std;
 using namespace genv;
 
 const int cellSize = 40;
-const int cellNumber = 20;
+const int cellNumber = 20; //must be at least 5
 const int windowSize = cellSize * cellNumber;
 
 class App : public Applikacio {
