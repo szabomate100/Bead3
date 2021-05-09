@@ -2,7 +2,14 @@
 #include <iostream>
 
 JatekMester::JatekMester(int nx, int ny) {
-    std::cout << "42" << endl;
+    for (int iy = 0; iy<ny;++iy){
+        vector<int> playFieldRow;
+        for (int ix = 0; ix<nx; ++ix){
+            playFieldRow.push_back(0);
+        }
+        playField.push_back(playFieldRow);
+    }
+    currentPlayer = 1;
 }
 
 void JatekMester::changeCurrentPlayer() {
@@ -15,4 +22,8 @@ void JatekMester::changeCurrentPlayer() {
 
 int JatekMester::getCurrentPlayer() {
     return currentPlayer;
+}
+
+void JatekMester::updateAfterClick(int ix, int iy) {
+
 }

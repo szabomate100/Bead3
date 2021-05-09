@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/JatekMester.cpp
+JatekMester.hpp
+D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/JatekMester.hpp
+iostream
+-
+
 D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/JatekMester.hpp
 vector
 -
@@ -15,6 +21,12 @@ widgets.hpp
 D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/widgets.hpp
 vector
 -
+
+D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/checkbox.cpp
+checkbox.hpp
+D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/checkbox.hpp
+graphics.hpp
+D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/graphics.hpp
 
 D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/checkbox.hpp
 graphics.hpp
