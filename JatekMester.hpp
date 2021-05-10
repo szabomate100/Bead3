@@ -21,7 +21,9 @@ public:
 
     int getCurrentPlayer();
 
-    int updateAfterClick(int ix, int iy);
+    void checkWinOrFull(int ix, int iy, int _currentPlayer);
+
+    void playerWins(int _currentPlayer);
 };
 
 

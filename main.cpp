@@ -24,7 +24,7 @@ public:
         for (int iy = 0; iy < cellNumber; ++iy) {
             vector<CheckBox> playFieldRow;
             for (int ix = 0; ix < cellNumber; ++ix) {
-                CheckBox *refCheckBox = new CheckBox(ix * cellSize, iy * cellSize, cellSize, cellSize, *jatekMester);
+                CheckBox *refCheckBox = new CheckBox(ix * cellSize, iy * cellSize, cellSize, cellSize, jatekMester);
                 playFieldRow.push_back(*refCheckBox);
                 bele(refCheckBox);
             }
