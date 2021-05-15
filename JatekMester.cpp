@@ -1,6 +1,8 @@
 #include "JatekMester.hpp"
 #include <iostream>
 
+using namespace std;
+
 JatekMester::JatekMester(int _nx, int _ny) {
     nx = _nx;
     ny = _ny;
@@ -44,10 +46,14 @@ bool JatekMester::allFieldsCheckedSame(vector<vector<int>> fieldList) {
             }
         }
     }
+
     return allEqual;
 }
 
-void JatekMester::checkWinOrFull(int ixClicked, int iyClicked, int _currentPlayer) {
+void JatekMester::updatePlayField_testWinOrFull(int ixClicked, int iyClicked, int _currentPlayer) {
+
+    // update playField
+    playField[ixClicked][iyClicked] = _currentPlayer;
 
     //horizontal sliding window
     int windowXLeftMin = max(ixClicked - 4, 0);
@@ -80,9 +86,38 @@ void JatekMester::checkWinOrFull(int ixClicked, int iyClicked, int _currentPlaye
             this->playerWins(_currentPlayer);
         }
     }
-    //first diagonal sliding window
-    //second diagonal sliding window
 
+    // northwest to southeast diagonal sliding window
+    int startOffsetMin_NW_SE = max(-iyClicked, max(-ixClicked, -4));
+    int startOffsetMax_NW_SE = min(ny - 5 - iyClicked, min(nx - 5 - ixClicked, 0));
+    for (int i_offset = startOffsetMin_NW_SE; i_offset <= startOffsetMax_NW_SE; ++i_offset) {
+        vector<vector<int>> fieldsInWindow;
+        for (int i = 0; i < 5; ++i) {
+            vector<int> field;
+            field.push_back(ixClicked + i_offset + i);
+            field.push_back(iyClicked + i_offset + i);
+            fieldsInWindow.push_back(field);
+        }
+        if (this->allFieldsCheckedSame(fieldsInWindow)) {
+            this->playerWins(_currentPlayer);
+        }
+    }
+
+    // northeast to southwest diagonal sliding window
+    int startOffsetMin_NE_SW = max(-iyClicked, max(ixClicked - nx + 1, -4));
+    int startOffsetMax_NE_SW = min(ny - 5 - iyClicked, min(ixClicked - 4, 0));
+    for (int i_offset = startOffsetMin_NE_SW; i_offset <= startOffsetMax_NE_SW; ++i_offset) {
+        vector<vector<int>> fieldsInWindow;
+        for (int i = 0; i < 5; ++i) {
+            vector<int> field;
+            field.push_back(ixClicked - i_offset - i);
+            field.push_back(iyClicked + i_offset + i);
+            fieldsInWindow.push_back(field);
+        }
+        if (this->allFieldsCheckedSame(fieldsInWindow)) {
+            this->playerWins(_currentPlayer);
+        }
+    }
 }
 
 void JatekMester::playerWins(int _currentPlayer) {

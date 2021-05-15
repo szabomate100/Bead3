@@ -21,7 +21,7 @@ public:
 
     int getCurrentPlayer();
 
-    void checkWinOrFull(int ix, int iy, int _currentPlayer);
+    void updatePlayField_testWinOrFull(int ix, int iy, int _currentPlayer);
 
     void playerWins(int _currentPlayer);
 };

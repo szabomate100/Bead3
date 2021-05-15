@@ -4,16 +4,17 @@
 
 using namespace genv;
 
-CheckBox::CheckBox(int x, int y, int sx, int sy, JatekMester *_jatekMester)
+CheckBox::CheckBox(int x, int y, int sx, int sy, int ix, int iy, JatekMester *_jatekMester)
         : Widget(x, y, sx, sy), jatekMester(jatekMester) {
     checked = false;
     whichPlayerChecked = 0;
     jatekMester = _jatekMester;
+    this->set_index(ix, iy);
 }
 
-void CheckBox::set_index(int _ix, int _iy){
-    my_ix = _ix;
-    my_iy = _iy;
+void CheckBox::set_index(int ix, int iy){
+    my_ix = ix;
+    my_iy = iy;
 }
 
 void CheckBox::draw() {
@@ -37,7 +38,7 @@ void CheckBox::handle(event ev) {
         checked = true;
         int currentPlayer = jatekMester->getCurrentPlayer();
         whichPlayerChecked = currentPlayer;
-        jatekMester->checkWinOrFull(my_ix, my_iy, currentPlayer);
+        jatekMester->updatePlayField_testWinOrFull(my_ix, my_iy, currentPlayer);
         jatekMester->changeCurrentPlayer();
     }
 }

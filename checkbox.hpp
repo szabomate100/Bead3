@@ -10,11 +10,11 @@ protected:
     bool checked;
     JatekMester *jatekMester;
     int whichPlayerChecked;
-    int my_ix;
-    int my_iy;
+    int my_ix;  // x coordinate of the checkbox on the board
+    int my_iy;  // y coordinate
 public:
-    CheckBox(int x, int y, int sx, int sy, JatekMester *_jatekMester);
-    void set_index(int _ix, int _iy);
+    CheckBox(int x, int y, int sx, int sy, int ix, int iy, JatekMester *_jatekMester);
+    void set_index(int ix, int iy);
     virtual void draw() ;
     virtual void handle(genv::event ev);
     virtual bool checked_e();
