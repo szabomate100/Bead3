@@ -24,6 +24,8 @@ public:
     void updatePlayField_testWinOrFull(int ix, int iy, int _currentPlayer);
 
     void playerWins(int _currentPlayer);
+
+    void playfieldIsFull();
 };
 
 

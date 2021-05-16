@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled.dir/applikacio.cpp.obj"
   "CMakeFiles/untitled.dir/checkbox.cpp.obj"
   "CMakeFiles/untitled.dir/main.cpp.obj"
+  "CMakeFiles/untitled.dir/statictext.cpp.obj"
   "CMakeFiles/untitled.dir/widgets.cpp.obj"
   "libuntitled.dll.a"
   "untitled.exe"

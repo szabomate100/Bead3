@@ -289,6 +289,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+statictext.obj: statictext.cpp.obj
+
+.PHONY : statictext.obj
+
+# target to build an object file
+statictext.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/statictext.cpp.obj
+.PHONY : statictext.cpp.obj
+
+statictext.i: statictext.cpp.i
+
+.PHONY : statictext.i
+
+# target to preprocess a source file
+statictext.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/statictext.cpp.i
+.PHONY : statictext.cpp.i
+
+statictext.s: statictext.cpp.s
+
+.PHONY : statictext.s
+
+# target to generate assembly for a file
+statictext.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/statictext.cpp.s
+.PHONY : statictext.cpp.s
+
 widgets.obj: widgets.cpp.obj
 
 .PHONY : widgets.obj
@@ -341,6 +368,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... statictext.obj
+	@echo ... statictext.i
+	@echo ... statictext.s
 	@echo ... widgets.obj
 	@echo ... widgets.i
 	@echo ... widgets.s

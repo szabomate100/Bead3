@@ -30,7 +30,6 @@ public:
             }
             playField.push_back(playFieldRow);
         }
-
     }
 };
 

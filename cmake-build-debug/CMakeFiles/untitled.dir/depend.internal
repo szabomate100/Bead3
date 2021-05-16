@@ -4,6 +4,9 @@
 CMakeFiles/untitled.dir/JatekMester.cpp.obj
  D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/JatekMester.cpp
  D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/JatekMester.hpp
+ D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/graphics.hpp
+ D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/statictext.hpp
+ D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/widgets.hpp
 CMakeFiles/untitled.dir/applikacio.cpp.obj
  D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/applikacio.cpp
  D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/applikacio.hpp
@@ -21,6 +24,11 @@ CMakeFiles/untitled.dir/main.cpp.obj
  D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/checkbox.hpp
  D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/graphics.hpp
  D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/main.cpp
+ D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/widgets.hpp
+CMakeFiles/untitled.dir/statictext.cpp.obj
+ D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/graphics.hpp
+ D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/statictext.cpp
+ D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/statictext.hpp
  D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/widgets.hpp
 CMakeFiles/untitled.dir/widgets.cpp.obj
  D:/Dokumentumok/PPKE/TT/BEVPROG2/gitrepo/Bead3/graphics.hpp

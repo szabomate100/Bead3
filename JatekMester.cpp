@@ -1,7 +1,10 @@
 #include "JatekMester.hpp"
 #include <iostream>
+#include "graphics.hpp"
+#include "statictext.hpp"
 
 using namespace std;
+using namespace genv;
 
 JatekMester::JatekMester(int _nx, int _ny) {
     nx = _nx;
@@ -50,10 +53,10 @@ bool JatekMester::allFieldsCheckedSame(vector<vector<int>> fieldList) {
     return allEqual;
 }
 
-void JatekMester::updatePlayField_testWinOrFull(int ixClicked, int iyClicked, int _currentPlayer) {
+void JatekMester::updatePlayField_testWinOrFull(int ixClicked, int iyClicked, int currentPlayer) {
 
     // update playField
-    playField[ixClicked][iyClicked] = _currentPlayer;
+    playField[ixClicked][iyClicked] = currentPlayer;
 
     //horizontal sliding window
     int windowXLeftMin = max(ixClicked - 4, 0);
@@ -67,7 +70,7 @@ void JatekMester::updatePlayField_testWinOrFull(int ixClicked, int iyClicked, in
             fieldsInWindow.push_back(field);
         }
         if (this->allFieldsCheckedSame(fieldsInWindow)) {
-            this->playerWins(_currentPlayer);
+            this->playerWins(currentPlayer);
         }
     }
 
@@ -83,7 +86,7 @@ void JatekMester::updatePlayField_testWinOrFull(int ixClicked, int iyClicked, in
             fieldsInWindow.push_back(field);
         }
         if (this->allFieldsCheckedSame(fieldsInWindow)) {
-            this->playerWins(_currentPlayer);
+            this->playerWins(currentPlayer);
         }
     }
 
@@ -99,7 +102,7 @@ void JatekMester::updatePlayField_testWinOrFull(int ixClicked, int iyClicked, in
             fieldsInWindow.push_back(field);
         }
         if (this->allFieldsCheckedSame(fieldsInWindow)) {
-            this->playerWins(_currentPlayer);
+            this->playerWins(currentPlayer);
         }
     }
 
@@ -115,13 +118,45 @@ void JatekMester::updatePlayField_testWinOrFull(int ixClicked, int iyClicked, in
             fieldsInWindow.push_back(field);
         }
         if (this->allFieldsCheckedSame(fieldsInWindow)) {
-            this->playerWins(_currentPlayer);
+            this->playerWins(currentPlayer);
         }
+    }
+
+    // test if playfield is full
+    bool is_full = true;
+    for (int ix = 0; ix < nx; ++ix) {
+        for (int iy = 0; iy < ny; ++iy) {
+            if (playField[ix][iy] == 0) {
+                is_full = false;
+            }
+        }
+    }
+    if(is_full){
+        this->playfieldIsFull();
     }
 }
 
-void JatekMester::playerWins(int _currentPlayer) {
-    cout << "Player " << _currentPlayer << " wins." << endl;
+void JatekMester::playerWins(int currentPlayer) {
+    cout << "Player " << currentPlayer << " wins." << endl;
+
+    vector<Widget *> w;
+    statictext *p = new statictext(400, 400, "Player " + to_string(currentPlayer) + " wins");
+    w.push_back(p);
+
+    while (true) {
+        gout << color(0, 0, 0) << move_to(0, 0) << box(800, 800);
+        for (Widget *wg : w) {
+            wg->draw();
+        }
+        gout << refresh;
+    };
+    //gout << color(0,0,0) << move_to(0,0) << box(800,800) <<refresh;
 }
+
+void JatekMester::playfieldIsFull() {
+    cout << "The field is full" << endl << "There is no winner" << endl << "Exiting now. Goodbye.";
+    exit(-1);
+}
+
 
 
